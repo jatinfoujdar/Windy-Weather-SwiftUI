@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct Weather : Hashable ,Codable{
+struct Location : Hashable ,Codable{
        var id: Int
        var name: String
        var park: String

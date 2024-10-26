@@ -1,6 +1,9 @@
 import Foundation
 
 
+
+var location: [Location] = load("Weather.json")
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

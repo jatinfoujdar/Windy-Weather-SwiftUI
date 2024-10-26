@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ListRow: View {
-//    var weather : Weather
+    var weather : Weather
     var body: some View {
-//        Text(wheather.name)
+        Text(wheather.name)
     }
 }
 
 #Preview {
-    ListRow()
+    ListRow(weather: Weather[0])
 }
