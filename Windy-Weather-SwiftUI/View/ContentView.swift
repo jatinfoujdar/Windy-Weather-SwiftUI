@@ -11,15 +11,13 @@ struct ContentView: View {
     
     var body: some View {
         let numbers = ["One", "Two", "Three", "Four", "Five"]
-        VStack {
         NavigationStack{
-                List{
-                  ForEach(numbers, id: \.self) { item in
+            List{
+                ForEach(numbers, id: \.self) { item in
                     Text(item)
-                  }
                 }
-                    
             }
+            .navigationTitle("City List")
         }
     }
 }
