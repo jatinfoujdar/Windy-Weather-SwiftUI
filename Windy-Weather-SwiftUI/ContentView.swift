@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
+        let numbers = ["One", "Two", "Three", "Four", "Five"]
         VStack {
-            Text("32 °C")
-                .font(.largeTitle)
-                .foregroundStyle(.blue)
-            
-            Spacer()
+        NavigationStack{
+                List{
+                  ForEach(numbers, id: \.self) { item in
+                    Text(item)
+                  }
+                }
+                    
+            }
         }
-        .padding()
     }
 }
 
